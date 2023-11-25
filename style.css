@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgb(33, 9, 245), rgb(248, 55, 7));
+}
+
+header {
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#task_input {
+    margin: 0 auto;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    appearance: none;
+    outline: none;
+    background: #000;
+    color: #6b7280;
+}
+
+#new_task {
+    width: 20%;
+    height: 55px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ff0000, #f35e5e);
+    color: blanchedalmond;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#new_task:hover {
+    background: linear-gradient(to bottom, #f35e5e, #49a5f0);
+    color: #000;
+}
+
+#new_task:active {
+    background: linear-gradient(to bottom, #49a5f0, green);
+    color: #000;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    #task_input {
+        width: 80%;
+    }
+
+    #new_task {
+        width: 20%;
+        margin-left: 0;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: capitalize;
+    text-shadow: 2px 3px #505050;
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edit,
+.delete {
+    border: none;
+    border-radius: 10px;
+    background: #f35e5e;
+    text-transform: capitalize;
+    color: blanchedalmond;
+    transition: 0.8s;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.edit {
+    margin-left: 15px;
+}
+
+.delete {
+    margin-left: 5px;
+}
+
+.edit:hover {
+    background: #49a5f0;
+    color: #000;
+}
+
+.delete:hover {
+    background: #f1030f;
+    color: #000;
+}
+
+.edit:active,
+.delete:active {
+    background: green;
+    color: #000;
+    transition: 0.5s;
+}
+
+h2 {
+    text-transform: capitalize;
+    text-shadow: 1px 2px #505050;
+}
+
+.text {
+    height: 30px;
+    border-radius: 10px;
+    background: #505050;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task .tasks {
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.text .tasks .content #text {
+    color: #000;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.8s;
+}
+
+.task .tasks .buttons {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.tasks .buttons button {
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.tasks .buttons button:hover {
+    opacity: 0.8;
+}
+
+.tasks .buttons button:active {
+    opacity: 0.8;
+}
+
+.tasks .buttons #edit {
+    color: #f35e5e;
+}
