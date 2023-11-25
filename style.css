@@ -86,8 +86,7 @@ main {
     margin: 0 auto;
 }
 
-.edit,
-.delete {
+.buttons {
     border: none;
     border-radius: 10px;
     background: #f35e5e;
@@ -117,8 +116,7 @@ main {
     color: #000;
 }
 
-.edit:active,
-.delete:active {
+.buttons:active {
     background: green;
     color: #000;
     transition: 0.5s;
